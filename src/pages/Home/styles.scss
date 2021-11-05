@@ -1,0 +1,21 @@
+@import "../../styles/sass/main.scss";
+
+.home-container {
+    background: url("../../assets/images/mountain_background.jpg") center top fixed;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100vh - 80px);
+
+    h1 {
+        font-weight: 600;
+        font-size: 90px;
+        color: $white;
+    }
+
+    h3 {
+        color: $white;
+    }
+}
