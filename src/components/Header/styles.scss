@@ -1,19 +1,58 @@
 @import '../../styles/sass/main.scss';
 
 header {
-    position: sticky;
+    position: relative;
     top: 0;
-    display: flex;
     background-color: $white;
     opacity: 1;
-    align-items: center;
     height: 80px;
+    font-size: $h6-font-size;
+    padding: 0px 20px;
 }
 
 .header-home-nav {
     flex: 1;
+    display: flex;
+
+    font-size: $h4-font-size;
+
+    @include respond-to(tablet) {
+        flex: 2;
+    }
 }
 
 .header-nav-links {
     flex: 2;
+
+    @include respond-to(tablet) {
+        display: none;
+    }
+}
+
+.header-icon-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    i {
+        font-size: 2rem;
+    }
+
+    @include respond-to(tablet) {
+        display: none;
+    }
+}
+
+.header-hamburger {
+    display: none;
+
+    @include respond-to(tablet) {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        padding: 0px 20px;
+        i {
+            font-size: 2rem;
+        }
+    }
 }
