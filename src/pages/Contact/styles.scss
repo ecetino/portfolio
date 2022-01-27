@@ -1,6 +1,21 @@
 @import '../../styles/sass/main.scss';
 
-.contact-container {
-    background-color: blue;
-    height: calc(100vh - 80px);
+.contact {
+    background-color: $dark-blue;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        color: $white;
+        margin-bottom: 30px;
+    }
+    p {
+        font: 18px $font-poppins;
+        color: $white;
+        min-width: 400px;
+        width: 35%;
+        margin-bottom: 5px;
+    }
 }
