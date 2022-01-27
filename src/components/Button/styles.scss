@@ -1,0 +1,23 @@
+@import "../../styles/sass/main.scss";
+
+.button {
+  width: 130px;
+  height: 50px;
+  background: $dark-blue;
+  border: 1px solid $white;
+  color: $white;
+  font: 16px $font-poppins;
+  cursor: pointer;
+  opacity: 1;
+  margin: 20px;
+
+  &:hover {
+    background: $white;
+    color: $dark-blue;
+    -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;  /* IE10? */
+    transition: all 0.4s ease-out;  
+  }
+}
