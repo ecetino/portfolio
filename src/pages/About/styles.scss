@@ -1,6 +1,53 @@
 @import '../../styles/sass/main.scss';
 
-.about-container {
-    background-color: blue;
-    height: calc(100vh - 80px);
+.about {
+    &-container {
+        background-color: $dark-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    &-header {
+        justify-self: center;
+        align-self: center;
+        position: relative;
+        padding: 40px;
+        height: 420px;
+        img {
+            position: absolute;
+            right: 0px;
+            height: 340px;
+            width: 340px;
+            object-fit: cover;
+        }
+    
+        h1 {
+            position: absolute;
+            top: 170px;
+            left: 10px;
+            background-color: $white;
+            width: 320px;
+            height: 120px;
+            text-align: center;
+            line-height: 120px;
+            color: $dark-blue;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 80px;
+        p {
+            min-width: 700px;
+            width: 40%;
+            font: 18px/26px $font-montserrat;
+            color: $white;
+            margin-bottom: 14px;
+            text-align: left;
+        }
+    }
 }
