@@ -4,7 +4,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -22,6 +22,11 @@ body {
     line-height: 1.3;
     text-align: center;
 }
+
+main {
+    min-height: calc(100vh - 80px);
+    width: 100%;
+  }
 
 h1 {
     font: 72px $font-montserrat;
@@ -67,7 +72,7 @@ p {
 
 a {
     margin: 0px 20px;
-    
+
     &:-webkit-any-link {
         text-decoration: none;
         color: inherit;
@@ -76,6 +81,10 @@ a {
     &:hover {
         text-decoration: underline;
     }
+}
+
+i {
+    font-size: 2rem;
 }
 
 // Text
@@ -102,9 +111,19 @@ a {
     margin-top: 20px;
 }
 
+.plr1 {
+    padding: 0px 20px;
+}
+
+.plr2 {
+    padding: 0px 40px;
+}
+
 // Flexbox
 
 .flex {
+    display: flex;
+
     &-col {
         display: flex;
         flex-direction: column;
@@ -113,6 +132,26 @@ a {
     &-jc-sb {
         display: flex;
         justify-content: space-between;
+    }
+
+    &-jc-sa {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-jc-se {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &-jc-fs {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &-jc-fe {
+        display: flex;
+        justify-content: flex-end;
     }
 
     &-jc-c {
@@ -128,13 +167,13 @@ a {
     &-center {
         display: flex;
         justify-content: center;
-        align-content: center;
+        align-items: center;
     }
 
     &-col-center {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
+        align-items: center;
     }
 }
