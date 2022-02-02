@@ -7,6 +7,8 @@
         flex-direction: column;
         justify-content: center;
         padding-top: 20px;
+        min-height: calc(100vh - 80px);
+        width: 100%;
     }
     
     &-header {
@@ -15,12 +17,23 @@
         position: relative;
         padding: 40px;
         height: 420px;
+
+        @include respond-to(tablet) {
+            height: clamp(250px, 40vw, 400px);
+            padding: 20px 40px;
+        }
+
         img {
             position: absolute;
             right: 0px;
             height: 340px;
             width: 340px;
             object-fit: cover;
+
+            @include respond-to(tablet) {
+                height: clamp(200px, 35vw, 340px);
+                width: clamp(200px, 35vw, 340px);
+            }
         }
     
         h1 {
@@ -33,6 +46,15 @@
             text-align: center;
             line-height: 120px;
             color: $dark-blue;
+
+            @include respond-to(tablet) {
+                width: clamp(160px, 25vw, 300px);
+                height: clamp(60px, 8vw, 100px);
+                font-size: clamp(35px, 6vw, 60px);
+                line-height: clamp(60px, 9vw, 120px);
+                top: clamp(100px, 19vw, 150px);
+                left: 40px;
+            }
         }
     }
 
@@ -40,7 +62,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 80px;
+        padding-bottom: 50px;
         p {
             min-width: 700px;
             width: 40%;
@@ -48,6 +70,12 @@
             color: $white;
             margin-bottom: 14px;
             text-align: left;
+
+            @include respond-to(tablet) {
+                width: 90%;
+                min-width: 200px;
+                max-width: 700px;
+            }
         }
     }
 }

@@ -4,6 +4,7 @@
     display: none;
 
     @include respond-to(tablet) {
+        z-index: 10;
         position: absolute;
         top: 0;
         left: 0;

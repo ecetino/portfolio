@@ -6,10 +6,7 @@ import { HamburgerMenu } from '../HamburgerMenu/hamburgerMenu';
 
 import './styles.scss';
 
-interface Props {
-};
-
-export const Header = ({ }: Props) => {
+export const Header = () => {
     const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
 
     return (
@@ -23,7 +20,7 @@ export const Header = ({ }: Props) => {
                 <Link to="resume">Resume</Link>
                 <Link to="contact">Contact</Link>
             </nav>
-            <nav className="header-icon-links flex-center">
+            <nav className="header-icon-links">
                 <a href="https://github.com/ecetino" target="_blank" rel="noreferrer">
                     <i className="icon bi-github" role="img" aria-label="GitHub" />
                 </a>
