@@ -1,0 +1,26 @@
+@import '../../../../styles/sass/main.scss';
+
+.contact-icon-wrapper {
+  background: $white;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  padding-top: 2px;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  i {
+    font-size: 1.4rem;
+  }
+}
+
+.icon-darkblue {
+  color: $dark-blue;
+}
