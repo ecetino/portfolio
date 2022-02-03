@@ -19,6 +19,12 @@ header {
     @include respond-to(tablet) {
         flex: 2;
     }
+
+    a {
+        @include respond-to(mobile) {
+            margin: 0 0 0 0;
+        }
+    }
 }
 
 .header-nav-links {
