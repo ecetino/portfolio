@@ -17,12 +17,13 @@ export const About = () => {
                     I studied Neuroscience at the University of Washington and my plan was to become a doctor. I wanted a career centered around improving the quality of life for everyone. As the child of immigrant parents, I saw how strenuous the workplace could be on the human body. My parents worked physically demanding jobs and suffered because of it.
                 </p>
                 <p>
-                    After graduation, I was preparing for my entrance exam into medical school. It was during this time that I decided to pursue a new career path in technology. By teaching myself how to code, I began to realize that my passion didn’t lie in the medical field. Because of this, I decided to put med school on hold and further explore technology.
-                </p>
-                <p>The excitement and satisfaction I experienced with coding quickly showed me that this was more than a hobby and that I wanted to make a career out of it. I am now a proud graduate of Hack Reactor, where I learned how to become autonomous full stack developer. Even though my interests had shifted from medicine, I know that this is a field that will allow me to make the lives of other’s so much more enjoyable.
+                    After graduation, as I was studying for my entrance exam for med school I began to learn how to code and quickly became engulfed in this new passion. I enjoyed it so much that I decided to put my med school plans on hold and pursue this new career path. I joined a coding bootcamp, Hack Reactor, and took my first steps to become a full-stack developer. Even though this career path was far different than my original, I knew that I could still improve lives as a developer and set that as my goal for myself.
                 </p>
                 <p>
-                    I’ve been building apps with JavaScript, React, and SQL and I’d love if you could view my projects to see how I’ve been using them. I’m especially proud of my app called Eye Browser, which improves accessibility with eye tracking technology to map mouse cursor placement.
+                    I took my first big step towards my goal when I joined Seity Health as a developer. Seity Health is a startup centered around improving the lives of its user by assessing their core values and coaching them towards fulfilling them. As a dev, I've played a key role in creating the application the team dreamed of and continue to grow tremendously as we add new features to our application and our user base grows.
+                </p>
+                <p>
+                    I am always open to hearing about new opportunities to pursue additional interests of mine or to exchange stories and I’d be happy if you’d reach out to me via LinkedIn or email at 1cetino.e@gmail.com.
                 </p>
             </div>
         </div>
